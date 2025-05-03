@@ -48,14 +48,14 @@ impl MyApp {
                 })
                 .collect(),
             Err(_) => {
-                self.log.push("❌ Failed to read input directory.".to_string());
+                self.log.push("Failed to read input directory.".to_string());
                 return;
             }
         };
 
         let total = paths.len() as f32;
         if total == 0.0 {
-            self.log.push("⚠️ No supported images found.".to_string());
+            self.log.push("No supported images found.".to_string());
             return;
         }
 
@@ -76,18 +76,18 @@ impl MyApp {
             _ => ImageFormat::Png,
         };
 
-        paths.par_iter().enumerate().for_each(|(idx, path)| {
+        paths.par_iter().enumerate().for_each(|(_idx, path)| {
             if let Ok(img) = image::open(path) {
                 let name = path.file_stem().unwrap().to_str().unwrap();
                 let out_path = Path::new(&output_dir).join(format!("{}.{}", name, &format_str));
                 let _ = img.save_with_format(out_path, format);
             } else {
-                eprintln!("❌ Failed to open {:?}", path);
+                eprintln!("Failed to open {:?}", path);
             }
         });
 
         self.progress = 1.0;
-        self.log.push("✅ Conversion finished!".to_string());
+        self.log.push("Conversion finished!".to_string());
     }
 }
 
@@ -142,7 +142,7 @@ impl eframe::App for MyApp {
             ui.horizontal(|ui| {
                 if ui.button("📁 Open Output Folder").clicked() {
                     if let Err(e) = open::that(&self.output_dir) {
-                        eprintln!("❌ Failed to open folder: {}", e);
+                        eprintln!("Failed to open folder: {}", e);
                     }
                 }
                 if ui.button("❌ Quit").clicked() {
