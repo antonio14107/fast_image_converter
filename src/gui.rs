@@ -49,7 +49,8 @@ impl eframe::App for FastImageConverter {
                         });
                 });
 
-                if self.format == "JPEG" {
+                // The format comparison needs to be case insensitive
+                if self.format.to_uppercase() == "JPEG" {
                     ui.horizontal(|ui| {
                         ui.label("Quality:");
                         ui.add(egui::Slider::new(&mut self.compression_level, 1..=100));
