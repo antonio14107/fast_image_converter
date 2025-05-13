@@ -43,3 +43,26 @@ cd fast-image-converter
 cargo build
 cargo run
 ```
+
+## Demo
+
+### Startup
+<img width="602" alt="Screenshot 2025-05-12 at 6 02 17 PM" src="https://github.com/user-attachments/assets/95df01eb-67cb-4201-a038-ba5060e29b44" />
+
+### Folder Selection
+<img width="801" alt="Screenshot 2025-05-12 at 7 05 41 PM" src="https://github.com/user-attachments/assets/b41f31f3-d00e-4374-a03a-60104b7fcd81" />
+
+### Format Selector
+<img width="601" alt="Screenshot 2025-05-12 at 7 07 14 PM" src="https://github.com/user-attachments/assets/9ef0e458-96f4-4434-aae3-80a64120672a" />
+
+### Unsupported File Type
+<img width="599" alt="Screenshot 2025-05-12 at 7 08 23 PM" src="https://github.com/user-attachments/assets/105b0875-7209-4afa-9c03-8f9d9a9e1b4c" />
+
+### JPEG Slider
+<img width="600" alt="Screenshot 2025-05-12 at 8 00 09 PM" src="https://github.com/user-attachments/assets/f13de876-5bd2-4d16-b75e-f007c4401109" />
+
+### Successful Conversion
+<img width="601" alt="Screenshot 2025-05-12 at 8 01 53 PM" src="https://github.com/user-attachments/assets/ee78bbc5-9fc5-4188-a3c3-9d53aaffbc8a" />
+
+### Open Output Folder
+<img width="918" alt="Screenshot 2025-05-12 at 8 02 51 PM" src="https://github.com/user-attachments/assets/5de0912b-8fa9-4c26-a1e4-37a60a9c39c9" />
