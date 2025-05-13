@@ -46,6 +46,9 @@ cargo run
 
 ## Demo
 
+### Video
+[![Watch the demo](https://img.youtube.com/vi/y-Ihx1XaWDc/0.jpg)](https://youtu.be/y-Ihx1XaWDc)
+
 ### Startup
 <img width="602" alt="Screenshot 2025-05-12 at 6 02 17 PM" src="https://github.com/user-attachments/assets/95df01eb-67cb-4201-a038-ba5060e29b44" />
 
